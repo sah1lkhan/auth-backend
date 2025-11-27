@@ -9,8 +9,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Env files (VERY IMPORTANT - never push secrets)
+
 .env
-.env.*
 !.env.example
 
 # Build outputs
