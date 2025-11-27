@@ -138,7 +138,6 @@ http://localhost:8000
 ✔ Tested routes  
 ✔ Cloudinary working  
 ✔ Error middleware added  
-✔ Ready for portfolio & job applications  
 
 ---
 
