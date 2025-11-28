@@ -93,15 +93,15 @@ const logInUser = asyncHandler(async (req, res) => {
   if (!password) {
     throw new apiError(400, "Please enter the password");
   }
-  const exitingUser = await User.findOne({
+  const existingUser = await User.findOne({
     $or: [{ username }, { email }],
   });
 
-  if (!exitingUser) {
+  if (!existingUser) {
     throw new apiError(400, "user not found check the credentials");
   }
 
-  const isPasswordCorrect = await exitingUser.isPasswordCorrect(password);
+  const isPasswordCorrect = await existingUser.isPasswordCorrect(password);
 
   if (!isPasswordCorrect) {
     throw new apiError(401, "Password is wrong");
