@@ -3,7 +3,7 @@
 A production-ready authentication backend built with **Node.js, Express, MongoDB, JWT, Cloudinary, Multer, and Mongoose**.  
 This project implements a modern auth flow with secure tokens, user profile management, file uploads, and cloud storage.
 
-Perfect for real-world applications and demonstrating backend skills to employers.
+##
 
 ---
 
