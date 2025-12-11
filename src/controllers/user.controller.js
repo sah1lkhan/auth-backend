@@ -108,7 +108,7 @@ const logInUser = asyncHandler(async (req, res) => {
   }
 
   const { accessToken, refreshToken } = await generateAccessRefreshToken(
-    exitingUser._id
+    existingUser._id
   );
 
   const cookiesOptions = { httpOnly: true, secure: true };
@@ -465,6 +465,7 @@ const getWatchHistory = asyncHandler(async (req, res) => {
       new apiResponse(200, watchHistory[0], "WatchHistory Successfully Fetch")
     );
 });
+
 export {
   registerUser,
   logInUser,
